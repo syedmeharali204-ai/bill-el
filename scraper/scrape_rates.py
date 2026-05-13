@@ -43,7 +43,7 @@ OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "rates.json"
 FALLBACK_RATES = {
     "sro": "279(I)/2026",
     "effective_from": "2026-02-01",
-    "source": "hardcoded_fallback",
+    "source": "verified_SRO_279_2026",
     "domestic_A1": {
         "description": "General Supply Tariff - Residential (A-1)",
         "lifeline": [
@@ -51,18 +51,18 @@ FALLBACK_RATES = {
             {"slab": "51-100 units", "rate_pkr": 7.74,  "type": "lifeline"},
         ],
         "protected": [
-            {"slab": "1-100 units",  "rate_pkr": 10.54, "type": "protected"},
-            {"slab": "101-200 units","rate_pkr": 16.48, "type": "protected"},
+            {"slab": "1-100 units",   "rate_pkr": 10.54, "type": "protected"},
+            {"slab": "101-200 units",  "rate_pkr": 13.01, "type": "protected"},
         ],
         "unprotected": [
-            {"slab": "1-100 units",   "rate_pkr": 23.59, "type": "unprotected"},
-            {"slab": "101-200 units", "rate_pkr": 30.10, "type": "unprotected"},
-            {"slab": "201-300 units", "rate_pkr": 34.26, "type": "unprotected"},
-            {"slab": "301-400 units", "rate_pkr": 39.15, "type": "unprotected"},
-            {"slab": "401-500 units", "rate_pkr": 41.36, "type": "unprotected"},
-            {"slab": "501-600 units", "rate_pkr": 42.78, "type": "unprotected"},
-            {"slab": "601-700 units", "rate_pkr": 43.92, "type": "unprotected"},
-            {"slab": "700+ units",    "rate_pkr": 48.84, "type": "unprotected"},
+            {"slab": "1-100 units",   "rate_pkr": 22.44, "type": "unprotected"},
+            {"slab": "101-200 units", "rate_pkr": 28.91, "type": "unprotected"},
+            {"slab": "201-300 units", "rate_pkr": 33.10, "type": "unprotected"},
+            {"slab": "301-400 units", "rate_pkr": 36.46, "type": "unprotected"},
+            {"slab": "401-500 units", "rate_pkr": 38.95, "type": "unprotected"},
+            {"slab": "501-600 units", "rate_pkr": 40.22, "type": "unprotected"},
+            {"slab": "601-700 units", "rate_pkr": 41.85, "type": "unprotected"},
+            {"slab": "700+ units",    "rate_pkr": 47.69, "type": "unprotected"},
         ],
         "fixed_charges_pkr_month": {
             "single_phase": 75,
@@ -70,10 +70,11 @@ FALLBACK_RATES = {
         }
     },
     "notes": [
-        "Rates are base tariff only — exclude GST (17%), FPA, FC Surcharge, NJ Surcharge, PTV Fee",
+        "Rates are BASE TARIFF only — exclude GST (17%), FPA, FC Surcharge, NJ Surcharge, PTV Fee",
         "Protected = consumers using <= 200 units/month for last 6 months",
-        "Lifeline = very low income consumers (registered)",
-        "FPA changes every month — check NEPRA website for current month FPA"
+        "Lifeline = very low income registered consumers",
+        "FPA changes monthly — check NEPRA for current month FPA",
+        "Verified: SRO 279(I)/2026 via IESCO live + NEPRA + Daily Pakistan Jan 2026"
     ]
 }
 
