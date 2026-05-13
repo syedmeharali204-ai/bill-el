@@ -1,0 +1,93 @@
+{
+  "last_updated": "2026-05-13T09:55:43.968521+00:00",
+  "scrape_status": {
+    "iesco": "failed",
+    "nepra_fca": "failed",
+    "lesco": "failed"
+  },
+  "tariff_rates": {
+    "sro": "279(I)/2026",
+    "effective_from": "2026-02-01",
+    "source": "hardcoded_fallback",
+    "domestic_A1": {
+      "description": "General Supply Tariff - Residential (A-1)",
+      "lifeline": [
+        {
+          "slab": "1-50 units",
+          "rate_pkr": 3.95,
+          "type": "lifeline"
+        },
+        {
+          "slab": "51-100 units",
+          "rate_pkr": 7.74,
+          "type": "lifeline"
+        }
+      ],
+      "protected": [
+        {
+          "slab": "1-100 units",
+          "rate_pkr": 10.54,
+          "type": "protected"
+        },
+        {
+          "slab": "101-200 units",
+          "rate_pkr": 16.48,
+          "type": "protected"
+        }
+      ],
+      "unprotected": [
+        {
+          "slab": "1-100 units",
+          "rate_pkr": 23.59,
+          "type": "unprotected"
+        },
+        {
+          "slab": "101-200 units",
+          "rate_pkr": 30.1,
+          "type": "unprotected"
+        },
+        {
+          "slab": "201-300 units",
+          "rate_pkr": 34.26,
+          "type": "unprotected"
+        },
+        {
+          "slab": "301-400 units",
+          "rate_pkr": 39.15,
+          "type": "unprotected"
+        },
+        {
+          "slab": "401-500 units",
+          "rate_pkr": 41.36,
+          "type": "unprotected"
+        },
+        {
+          "slab": "501-600 units",
+          "rate_pkr": 42.78,
+          "type": "unprotected"
+        },
+        {
+          "slab": "601-700 units",
+          "rate_pkr": 43.92,
+          "type": "unprotected"
+        },
+        {
+          "slab": "700+ units",
+          "rate_pkr": 48.84,
+          "type": "unprotected"
+        }
+      ],
+      "fixed_charges_pkr_month": {
+        "single_phase": 75,
+        "three_phase": 150
+      }
+    },
+    "notes": [
+      "Rates are base tariff only — exclude GST (17%), FPA, FC Surcharge, NJ Surcharge, PTV Fee",
+      "Protected = consumers using <= 200 units/month for last 6 months",
+      "Lifeline = very low income consumers (registered)",
+      "FPA changes every month — check NEPRA website for current month FPA"
+    ]
+  },
+  "live_data": {}
+}
