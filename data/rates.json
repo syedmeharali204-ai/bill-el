@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-13T09:55:43.968521+00:00",
+  "last_updated": "2026-05-13T10:06:45.447715+00:00",
   "scrape_status": {
-    "iesco": "failed",
+    "iesco": "success",
     "nepra_fca": "failed",
     "lesco": "failed"
   },
@@ -89,5 +89,576 @@
       "FPA changes every month — check NEPRA website for current month FPA"
     ]
   },
-  "live_data": {}
+  "live_data": {
+    "iesco": {
+      "source": "iesco_website",
+      "sro": "unknown",
+      "scraped_at": "2026-05-13T10:06:47.306935+00:00",
+      "raw_tables": [
+        [
+          [
+            "Sr. No.",
+            "TARIFF CATEGORY / PARTICULARS",
+            "FIXED CHARGES Rs/Cons//M",
+            "FIXED CHARGES Rs/kW/M",
+            "APPLICABLE VARIABLE CHARGES Rs./kWh"
+          ],
+          [
+            "a)",
+            "For Sanctioned load up to 5 kW",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "",
+            "Protected",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "i",
+            "Up to 50 Units - Life Line",
+            "-",
+            "-",
+            "-",
+            "3.95"
+          ],
+          [
+            "ii",
+            "01 - 100 Units - Life Line",
+            "-",
+            "-",
+            "-",
+            "7.74"
+          ],
+          [
+            "iii",
+            "001 - 100 Units",
+            "-",
+            "200",
+            "-",
+            "10.54"
+          ],
+          [
+            "iv",
+            "101 - 200 Units",
+            "-",
+            "300",
+            "-",
+            "13.01"
+          ],
+          [
+            "",
+            "Un-Protected",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "v",
+            "1- 100 Units",
+            "-",
+            "275",
+            "-",
+            "22.44"
+          ],
+          [
+            "vi",
+            "101 - 200 Units",
+            "-",
+            "300",
+            "-",
+            "28.91"
+          ],
+          [
+            "vii",
+            "201 - 300 Units",
+            "-",
+            "350",
+            "-",
+            "33.10"
+          ],
+          [
+            "viii",
+            "301 - 400 Units",
+            "-",
+            "400",
+            "-",
+            "36.46"
+          ],
+          [
+            "ix",
+            "401 - 500 Units",
+            "-",
+            "500",
+            "-",
+            "38.95"
+          ],
+          [
+            "x",
+            "501 - 600 Units",
+            "-",
+            "675",
+            "-",
+            "40.22"
+          ],
+          [
+            "xi",
+            "601 - 700 Units",
+            "-",
+            "675",
+            "-",
+            "41.85"
+          ],
+          [
+            "xii",
+            "Above 700 Units",
+            "-",
+            "675",
+            "-",
+            "47.20"
+          ],
+          [
+            "b)",
+            "For Sanctioned load 5 kW & above",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "",
+            "",
+            "-",
+            "-",
+            "Peak",
+            "Off-Peak"
+          ],
+          [
+            "",
+            "Time Of Use",
+            "-",
+            "675",
+            "46.85",
+            "34.53"
+          ],
+          [
+            "c)",
+            "Pre-paid Residential Supply Tariff",
+            "-",
+            "675",
+            "-",
+            "42.12"
+          ],
+          [
+            "As per the Authority's decision only protected residential consumers will be given the benifits of one previous slab."
+          ],
+          [
+            "As per Authority decision, residestial Life Line consumer will not be given any slab benefit."
+          ],
+          [
+            "Under tariff A-1, there shall be minimum monthly customer charge at the following rates even if no energy is consumed.Per consumers where monthly fixed charges are applicable,no minimum charges shall be applicable on such consumers,even no even energy consumed."
+          ],
+          [
+            "The fixed charges for Non-ToU domestic consumersshall be applicable based on the sanctioned load.The fixed charges for ToU domestic consumersshall be applicable baaed on 50% ofthe sanctioned load or MD1, whichever le higher.For the month of February 2026, for TOU domestic consumers, where MD1 is not available, fixed charges shall be applicable based on 50% ofthe sanctioned load."
+          ],
+          [
+            "a) Single Phase Connections:",
+            "Rs. 75/- per consumer per month"
+          ],
+          [
+            "b) Three Phase Connections:",
+            "Rs. 150 /- per consumer per month"
+          ],
+          [
+            "A-2 GENERAL SUPPLY TARIFF - COMMERCIAL"
+          ],
+          [
+            "a)",
+            "For Sanctioned load upto 5 kW",
+            "1000",
+            "-",
+            "-",
+            "37.44"
+          ],
+          [
+            "b)",
+            "For Sanctioned load up to 5 kW & Above",
+            "-",
+            "1250",
+            "-",
+            "39.76"
+          ],
+          [
+            "",
+            "",
+            "",
+            "-",
+            "Peak",
+            "Off-Peak"
+          ],
+          [
+            "c)",
+            "Time Of Use",
+            "-",
+            "1250",
+            "43.82",
+            "35.15"
+          ],
+          [
+            "d)",
+            "Electric Vehicle Charging Station",
+            "-",
+            "-",
+            "",
+            "23.57"
+          ],
+          [
+            "e)",
+            "Pre-paid Commercial Supply Tariff",
+            "-",
+            "1250",
+            "",
+            "42.38"
+          ],
+          [
+            "Where Fixed charges are applicable Rs/KW/Month the charge shall be billed based on 25% of sanctioned load or actual MDI for the month which ever is higher."
+          ],
+          [
+            "A-3 GENERAL SERVICES"
+          ],
+          [
+            "a)",
+            "General Services",
+            "1000",
+            "-",
+            "-",
+            "42.48"
+          ],
+          [
+            "c)",
+            "Pre-paid General Services Supply Tariff",
+            "1000",
+            "-",
+            "-",
+            "42.48"
+          ],
+          [
+            "Where Fixed charges are applicable Rs/KW/Month the charge shall be billed based on 25% of sanctioned load or actual MDI for the month which ever is higher."
+          ],
+          [
+            "B - INDUSTRIAL"
+          ],
+          [
+            "B1",
+            "Up To 25 kW (at 400/230 Volts)",
+            "1000",
+            "-",
+            "-",
+            "26.23"
+          ],
+          [
+            "B2(a)",
+            "Exceeding 25-500 kW (at 400 Volts)",
+            "-",
+            "1250",
+            "-",
+            "26.16"
+          ],
+          [
+            "",
+            "Time Of Use",
+            "-",
+            "",
+            "Peak",
+            "Off-Peak"
+          ],
+          [
+            "B1 (b)",
+            "Upto 25 kW",
+            "1000",
+            "-",
+            "35.74",
+            "25.48"
+          ],
+          [
+            "B2(b)",
+            "Exceeding 25-500 kW (at 400 Volts)",
+            "-",
+            "1250",
+            "35.68",
+            "22.83"
+          ],
+          [
+            "B3",
+            "For All Loads up to 5000 kW (at 11,33 kV)",
+            "-",
+            "1250",
+            "35.68",
+            "23.67"
+          ],
+          [
+            "B4",
+            "For All Loads (at 66,132 kV & above)",
+            "-",
+            "1250",
+            "35.68",
+            "23.38"
+          ],
+          [
+            "Pre-paid Industrial Supply Tariff",
+            "1250",
+            "",
+            "35.72"
+          ],
+          [
+            "C - SINGLE-POINT SUPPLY"
+          ],
+          [
+            "C-1",
+            "For supply at 400/230 Volts",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          [
+            "a)",
+            "Sanctioned load less than 5 kW",
+            "2000",
+            "-",
+            "-",
+            "43.39"
+          ],
+          [
+            "b)",
+            "Sanctioned load above 5 kW & up to 500 kW",
+            "-",
+            "1250",
+            "-",
+            "40.63"
+          ],
+          [
+            "C-2(a)",
+            "For supply at 11,33 kV up to and including 5000 kW",
+            "-",
+            "1250",
+            "-",
+            "40.57"
+          ],
+          [
+            "C-3(a)",
+            "For supply at 66 kV & above and sanctioned load above 5000 kW",
+            "-",
+            "1250",
+            "-",
+            "40.77"
+          ],
+          [
+            "",
+            "Time Of Use (Optional)",
+            "-",
+            "",
+            "Peak",
+            "Off-Peak"
+          ],
+          [
+            "C-1(c)",
+            "For supply at 400/230 Volts above 5 kW & up to 500 kW",
+            "-",
+            "1250",
+            "46.31",
+            "37.54"
+          ],
+          [
+            "C-1(b)",
+            "For supply at 11,33 kV up to and including 5000 kW",
+            "-",
+            "1250",
+            "46.31",
+            "36.03"
+          ],
+          [
+            "C-3(b)",
+            "For supply at 66 kV & above and sanctioned load above 5000 kW",
+            "-",
+            "1250",
+            "46.31",
+            "35.76"
+          ],
+          [
+            "Pre-paid Bulk Supply Tariff",
+            "1250",
+            "",
+            "44.87"
+          ],
+          [
+            "Where Fixed charges are applicable Rs/KW/Month the charge shall be billed based on 25% of sanctioned load or actual MDI for the month which ever is higher."
+          ],
+          [
+            "D - AGRICULTURE TARIFF"
+          ],
+          [
+            "D-1(a)",
+            "SCARP less than 5 kW",
+            "-",
+            "-",
+            "-",
+            "39.87"
+          ],
+          [
+            "D-2(a)",
+            "Agricultural Tube Wells",
+            "-",
+            "400",
+            "-",
+            "28.90"
+          ],
+          [
+            "",
+            "",
+            "",
+            "-",
+            "Peak",
+            "Off-Peak"
+          ],
+          [
+            "D-1(b)",
+            "SCARP 5 kW & above",
+            "-",
+            "400",
+            "42.79",
+            "34.71"
+          ],
+          [
+            "D-2(b)",
+            "Agricultural 5 kW & above",
+            "-",
+            "400",
+            "29.54",
+            "28.69"
+          ],
+          [
+            "Pre-paid Agri & Scarp Supply Tariff",
+            "400",
+            "",
+            "33.15"
+          ],
+          [
+            "Under this tariff, there shall be minimum monthly charges of Rs.2000/- per consumer per month, even if no energy is consumed."
+          ],
+          [
+            "Note:- The consumers having sanctioned load less than 5 kW can opt for TOU metering."
+          ],
+          [
+            "E - TEMPORARY SUPPLY TARIFFS"
+          ],
+          [
+            "E-1(i)",
+            "Residential Supply",
+            "-",
+            "675",
+            "-",
+            "52.89"
+          ],
+          [
+            "E-1(ii)",
+            "Commercial Supply",
+            "5000",
+            "-",
+            "-",
+            "53.44"
+          ],
+          [
+            "E-2",
+            "Industrial Supply",
+            "5000",
+            "-",
+            "-",
+            "42.25"
+          ],
+          [
+            "F - SEASONAL INDUSTRIAL SUPPLY TARIFF"
+          ],
+          [
+            "-",
+            ""
+          ],
+          [
+            "125% of relevant industrial tariff"
+          ],
+          [
+            "Note:",
+            "Tariff-F consumers will have the option to convert to Regular Tariff and vice versa. This option can be exercised at the time of a new connection or at the beginning of the season. Once exercised , the option remains in force for at least one year."
+          ],
+          [
+            "G- PUBLIC LIGHTING"
+          ],
+          [
+            "G",
+            "Street Lighting",
+            "2000",
+            "-",
+            "",
+            "42.91"
+          ],
+          [
+            "125% of relevant industrial tariff"
+          ],
+          [
+            "H - RESIDENTIAL COLONIES ATTACHED TO INDUSTRIAL PREMISES"
+          ],
+          [
+            "H",
+            "Residential Colonies attached to industrial premises",
+            "2000",
+            "-",
+            "-",
+            "42.10"
+          ],
+          [
+            "K - SPECIAL CONTRACTS"
+          ],
+          [
+            "1",
+            "Azad Jammu & Kashmir (AJK)",
+            "-",
+            "1250",
+            "-",
+            "26.45"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "Peak",
+            "Off-Peak"
+          ],
+          [
+            "",
+            "Time Of Use",
+            "-",
+            "1250",
+            "28.85",
+            "25.73"
+          ],
+          [
+            "2",
+            "Rawat Lab",
+            "2000",
+            "-",
+            "-",
+            "42.25"
+          ]
+        ]
+      ],
+      "url": "https://www.iesco.com.pk/tariff-guide"
+    }
+  }
 }
