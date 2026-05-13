@@ -1,0 +1,64 @@
+name: Daily Electricity Tariff Scraper
+
+on:
+  # ──────────────────────────────────────────
+  # Har roz subah 6:00 AM Pakistan time (1:00 AM UTC)
+  # ──────────────────────────────────────────
+  schedule:
+    - cron: '0 1 * * *'
+
+  # Manual run bhi kar sakte hain GitHub UI se
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    name: Scrape NEPRA & DISCO Rates
+    runs-on: ubuntu-latest          # Free on public repo ✅
+
+    permissions:
+      contents: write               # Repo mein commit karne ke liye
+
+    steps:
+      # ── Step 1: Code checkout ──────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Step 2: Python setup ───────────────
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # ── Step 3: Dependencies install ───────
+      - name: Install dependencies
+        run: |
+          pip install -r scraper/requirements.txt
+
+      # ── Step 4: Run scraper ─────────────────
+      - name: Run tariff scraper
+        run: |
+          python scraper/scrape_rates.py
+
+      # ── Step 5: data/rates.json commit ─────
+      - name: Commit updated rates.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/rates.json
+          # Agar koi change nahi hua toh commit skip
+          git diff --cached --quiet || git commit -m "chore: update electricity rates $(date -u '+%Y-%m-%d')"
+          git push
+
+      # ── Step 6: Summary print ───────────────
+      - name: Show result summary
+        run: |
+          echo "### Scrape Result" >> $GITHUB_STEP_SUMMARY
+          echo '```json' >> $GITHUB_STEP_SUMMARY
+          cat data/rates.json | python -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          print('Last Updated:', d['last_updated'])
+          print('Scrape Status:', d['scrape_status'])
+          " >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
