@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T04:11:45.185482+00:00",
+  "last_updated": "2026-07-29T04:13:48.294539+00:00",
   "scrape_status": {
     "iesco": "success",
     "nepra_fca": "failed",
@@ -94,7 +94,7 @@
     "iesco": {
       "source": "iesco_website",
       "sro": "unknown",
-      "scraped_at": "2026-07-28T04:11:46.736038+00:00",
+      "scraped_at": "2026-07-29T04:13:49.711432+00:00",
       "raw_tables": [
         [
           [
@@ -665,7 +665,7 @@
       "source": "nepra_lesco_page",
       "disco": "LESCO",
       "recent_pdfs": [],
-      "scraped_at": "2026-07-28T04:11:51.952104+00:00",
+      "scraped_at": "2026-07-29T04:13:55.770302+00:00",
       "url": "https://nepra.org.pk/tariff/Distribution%20LESCO.php"
     }
   }
