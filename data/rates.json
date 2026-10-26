@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T05:47:28.157069+00:00",
+  "last_updated": "2026-10-26T05:50:10.172299+00:00",
   "scrape_status": {
     "iesco": "success",
     "nepra_fca": "failed",
@@ -94,7 +94,7 @@
     "iesco": {
       "source": "iesco_website",
       "sro": "unknown",
-      "scraped_at": "2026-10-25T05:47:30.228934+00:00",
+      "scraped_at": "2026-10-26T05:50:11.577246+00:00",
       "raw_tables": [
         [
           [
